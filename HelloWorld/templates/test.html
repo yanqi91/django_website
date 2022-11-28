@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    <p>{{ views_list.1 }}</p>
+    <p>{{ views_dict.abc}}</p>
+    <p>{{ views_dict.abc|length}}</p>
+    <p>{{ hype_link|safe }}</p>
+    <p>
+        {%if num > 90 and num <= 100 %}
+        优秀
+        {% elif num > 60 and num <= 90 %}
+        合格
+        {% else %}
+        一边玩去～
+        {% endif %}
+    </p>
+<!--    <a href='https://www.runoob.com/'>点击跳转</a>-->
+</body>
+</html>
