@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-def test(request):
+def main(request):
 
     views_name = 'Zhejiang Lab'
     views_list = ['abc','def','ghk']
@@ -9,7 +9,7 @@ def test(request):
     views_num = 88
 
     return render(request,
-                  'test.html',
+                  'main.html',
                   {
                       "views_list": views_list,
                       "views_dict":views_dict,
