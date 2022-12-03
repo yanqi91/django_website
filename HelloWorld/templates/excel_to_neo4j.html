@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <title>EXCEL_TO_NEO4J</title>
 </head>
+
 <body>
+    <h2>excel自动生成neo4j</h2>
+
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label> 上传文件 </label>
+        <input type="file" name="myfile" />
+        <br/>
+        <input type="submit" value="upload"/>
+    </form>
 
 </body>
+
 </html>

@@ -17,5 +17,10 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url('main/', views.main),
+    url(r'main/',
+        views.main,
+        name='main'),
+    url(r'excel_to_neo4j/',
+        views.upload_file,
+        name='excel_to_neo4j'),
 ]
